@@ -34,7 +34,7 @@ namespace Rg.Plugins.Popup.Droid.Impl
 
             page.Layout(DependencyService.Get<IScreenHelper>().ScreenSize);
 
-            decoreView.AddView(renderer.ViewGroup);
+            decoreView.AddView(renderer.View);
             UpdateListeners(true);
         }
 
@@ -43,7 +43,7 @@ namespace Rg.Plugins.Popup.Droid.Impl
             var renderer = page.GetOrCreateRenderer();
             if (renderer != null)
             {
-                _decoreView.RemoveView(renderer.ViewGroup);
+                _decoreView.RemoveView(renderer.View);
                 UpdateListeners(false);
                 //renderer.Dispose();
             }
