@@ -48,7 +48,7 @@ namespace Rg.Plugins.Popup.Droid.Impl
             {
                 var element = renderer.Element;
 
-                DecoreView.RemoveView(renderer.ViewGroup);
+                DecoreView.RemoveView(renderer.View);
                 renderer.Dispose();
 
                 if(element != null)
