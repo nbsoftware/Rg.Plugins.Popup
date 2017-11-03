@@ -19,7 +19,7 @@ namespace Rg.Plugins.Popup.Platform.Renderers
         }
     }
 
-#if !__PLATFORM_PCL__
+#if !NETSTANDARD2_0
     [RenderWith(typeof(PopupPageRenderer))]
 #endif
     internal class _PopupPageRenderer { }

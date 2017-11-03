@@ -21,7 +21,7 @@ namespace Rg.Plugins.Popup.IOS.Renderers
         private CGRect _keyboardBounds;
         private bool _isDisposed;
 
-        private PopupPage CurrentElement => (PopupPage) Element;
+        private PopupPage CurrentElement => (PopupPage)Element;
 
         #region Main Methods
 
@@ -82,6 +82,7 @@ namespace Rg.Plugins.Popup.IOS.Renderers
             var view = e.View;
             var location = e.LocationInView(view);
             var subview = view.HitTest(location, null);
+
             if (subview == view)
             {
                 CurrentElement.SendBackgroundClick();
@@ -197,7 +198,7 @@ namespace Rg.Plugins.Popup.IOS.Renderers
                 //It is needed that buttons are working when keyboard is opened. See #11
                 await Task.Delay(70);
 
-                if(!_isDisposed)
+                if (!_isDisposed)
                     await UIView.AnimateAsync((double)(NSNumber)duration, OnKeyboardAnimated);
             }
             else

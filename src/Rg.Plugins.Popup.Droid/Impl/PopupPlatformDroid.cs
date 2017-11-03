@@ -35,7 +35,7 @@ namespace Rg.Plugins.Popup.Droid.Impl
 
             var renderer = page.GetOrCreateRenderer();
 
-            decoreView.AddView(renderer.ViewGroup);
+            decoreView.AddView(renderer.View);
             UpdateListeners(true);
 
             await Task.Delay(5);
