@@ -151,7 +151,7 @@ namespace Rg.Plugins.Popup.Droid.Renderers
 
             _gestureDetector.OnTouchEvent(e);
 
-            if (!CurrentElement.InputTransparent)
+            if (CurrentElement != null && !CurrentElement.InputTransparent)
                 return baseValue;
 
             return false;
