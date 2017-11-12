@@ -5,7 +5,7 @@
     <Copyright>Copyright © rotorgames 2015-2016</Copyright>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="2.4.0.38779" />
+    <PackageReference Include="Xamarin.Forms" Version="2.4.0.74863" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Stubs\Rg.Plugins.Popup.Platform\Rg.Plugins.Popup.Platform.csproj" />
